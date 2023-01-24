@@ -22,15 +22,12 @@ body {
 }
 
 .container {
-    /* display: flex;
-    justify-content: center; */
     width: 50%;
 }
 
 .memory {
     background-color: #152938;
     padding-bottom: 40px;
-    /* position: absolute; */
     height: 50px;
     left: 38.23%;
     right: 38.38%;
@@ -40,18 +37,12 @@ body {
     font-weight: 700;
     font-size: 40px;
     line-height: 50px;
-    /* identical to box height */
     color: #FCFCFC;
     text-align: center;
     padding-bottom: 120px;
 }
 
 .white {
-    /* position: absolute; */
-    /* margin-left: 50px;
-    margin-right: 50px; */
-    /* top: 18.63%;
-    bottom: 0%; */
     background: #FCFCFC;
     border-radius: 10px;
     padding: 10px;
@@ -73,8 +64,6 @@ button {
     padding: 10px 0;
     color: white;
     border-radius: 50px;
-    /* margin-left: 20px; */
-    /* margin-right: 20px; */
 }
 
 .l1,
@@ -115,6 +104,8 @@ h3 {
     font-weight: 700;
     font-size: 20px;
     line-height: 25px;
-    /* identical to box height */
     color: #7191A5;
 }
+
+
+/* Game-Number-Multiplayer-6x6- styles */
