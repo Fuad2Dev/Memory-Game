@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="styles.css" />
     <script src="main.js"></script>
     <title>Frontend Mentor | Memory game</title>
 </head>
@@ -13,75 +13,45 @@
 <body>
     <!-- Game setup start -->
 
-    <div class="blue">
-        <h3 class="memory">memory</h3>
+    <div class="container">
 
+        <div>
+            <h3 class="memory">memory</h3>
+        </div>
         <div class="white">
-            <h3>Select Theme</h3>
-            <button>Numbers</button>
-            <button>Icons</button>
-        </div>
 
-        <div>
-            <h3>Number of Players</h3>
-            <div class="nop">
-                <button>1</button>
-                <button>2</button>
-                <button>3</button>
-                <button>4</button>
+            <div class="row">
+                <h3>Select Theme</h3>
+                <div class="btn-row">
+                    <button class="l1 active">Numbers</button>
+                    <button class="l1 hover">Icons</button>
+                </div>
             </div>
 
-        </div>
-
-        <div>
-            <h3 class="gs">Grid Size</h3>
-            <div class="gsb">
-                <button>4x4</button>
-                <button>6x6</button>
+            <div class="row">
+                <h3>Number of Players</h3>
+                <div class="btn-row">
+                    <button class="l2 active">1</button>
+                    <button class="l2">2</button>
+                    <button class="l2 hover">3</button>
+                    <button class="l2">4</button>
+                </div>
             </div>
 
-        </div>
-
-        <div>
-            <button class="yellow">Start Game</button>
+            <div class="row">
+                <h3 class="gs">Grid Size</h3>
+                <div class="btn-row">
+                    <button class="l3 active">4x4</button>
+                    <button class="l3 hover">6x6</button>
+                </div>
+            </div>
+            <div class="row">
+                <button class="btn hover-btn">Start Game</button>
+            </div>
         </div>
     </div>
 
-    Select Theme Numbers Icons Number of Players 1 2 3 4 Grid Size 4 x4 6 x6 Start Game
 
-    <!-- Game setup end -->
+</body>
 
-    <!-- Game board start -->
-
-    Restart New Game
-
-    <!-- Multiplayer scores start -->
-
-    Player 1
-    <!-- P1 score -->
-    Current Turn Player 2
-    <!-- P2 score -->
-    Current Turn Player 3
-    <!-- P3 score -->
-    Current Turn Player 4
-    <!-- P4 score -->
-    Current Turn
-
-    <!-- Multiplayer scores start -->
-
-    <!-- Solo game time and moves counter start -->
-
-    Time
-    <!-- Time elapsed -->
-
-    Moves
-    <!-- Moves total -->
-
-    <!-- Solo game time and moves counter end -->
-
-    <!-- Game board end -->
-
-
-    < /body>
-
-        < /html>
+</html>

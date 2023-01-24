@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Rubik:ital,wght@0,300;0,500;0,700;1,400&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+    font-family: 'Rubik', sans-serif;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: #152938;
+    overflow: hidden;
+}
+
+.container {
+    /* display: flex;
+    justify-content: center; */
+    width: 50%;
+}
+
+.memory {
+    background-color: #152938;
+    padding-bottom: 40px;
+    /* position: absolute; */
+    height: 50px;
+    left: 38.23%;
+    right: 38.38%;
+    top: calc(50% - 50px/2 - 318.5px);
+    font-family: 'Atkinson Hyperlegible';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+    /* identical to box height */
+    color: #FCFCFC;
+    text-align: center;
+    padding-bottom: 120px;
+}
+
+.white {
+    /* position: absolute; */
+    /* margin-left: 50px;
+    margin-right: 50px; */
+    /* top: 18.63%;
+    bottom: 0%; */
+    background: #FCFCFC;
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.row {
+    width: 90%;
+    margin: 10px 0;
+}
+
+button {
+    background-color: #BCCED9;
+    border: none;
+    padding: 10px 0;
+    color: white;
+    border-radius: 50px;
+    /* margin-left: 20px; */
+    /* margin-right: 20px; */
+}
+
+.l1,
+.l3 {
+    width: 47%;
+}
+
+.l2 {
+    width: 21%;
+}
+
+.hover:hover {
+    background-color: #6395B8;
+}
+
+.hover-btn:hover {
+    background-color: #FFB84A;
+}
+
+.btn {
+    width: 100%;
+    background-color: #FDA214;
+    height: 50px;
+}
+
+.btn-row {
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+}
+
+.active {
+    background-color: #304859;
+}
+
+h3 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    /* identical to box height */
+    color: #7191A5;
+}
