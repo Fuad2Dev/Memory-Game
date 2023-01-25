@@ -62,7 +62,7 @@ button {
     background-color: #BCCED9;
     border: none;
     padding: 10px 0;
-    color: white;
+    color: #FCFCFC;
     border-radius: 50px;
 }
 
@@ -106,8 +106,3 @@ h3 {
     line-height: 25px;
     color: #7191A5;
 }
-
-
-/* Game-Number-Multiplayer-6x6- styles */
-
-.body-2 {}
