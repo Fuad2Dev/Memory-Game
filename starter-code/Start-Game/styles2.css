@@ -16,10 +16,10 @@ body {
     height: 100vh;
     background: #FCFCFC;
     overflow: hidden;
-    border: solid;
     display: flex;
     flex-direction: column;
     padding: 5rem 10rem;
+    overflow-y: scroll;
 }
 
 .nav {
@@ -47,6 +47,10 @@ body {
     color: #FCFCFC;
 }
 
+.nav-r:hover {
+    background-color: #FFB84A;
+}
+
 .nav-n {
     width: 127px;
     height: 52px;
@@ -54,6 +58,10 @@ body {
     border-radius: 26px;
     font-weight: 700;
     font-size: 18px;
+}
+
+.nav-n:hover {
+    background-color: #6395B8;
 }
 
 .cal {
@@ -86,6 +94,10 @@ body {
     font-weight: 700;
 }
 
+.flex>.hover:hover {
+    background-color: #6395B8;
+}
+
 .dark {
     height: 60px;
     width: 60px;
@@ -105,6 +117,11 @@ body {
 .flex>button {
     margin-right: 1rem;
 }
+
+
+/* footer {
+    background-color: aqua;
+} */
 
 .ft {
     display: flex;
@@ -150,7 +167,6 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    /* width: 100%; */
 }
 
 .p2>p {
