@@ -130,6 +130,12 @@ body {
     align-items: center;
 }
 
+.ft-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .f {
     height: 72px;
     width: 23%;
