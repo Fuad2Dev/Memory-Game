@@ -144,7 +144,7 @@ body {
 }
 
 h3 {
-    color: #FCFCFC;
+    color: #304859;
     font-family: 'Atkinson Hyperlegible';
     font-style: normal;
     font-weight: 700;
@@ -164,7 +164,7 @@ h1 {
     font-size: 32px;
     line-height: 40px;
     text-align: right;
-    color: #FCFCFC;
+    color: #304859;
 }
 
 .winner {
@@ -180,7 +180,6 @@ h1 {
 }
 
 .winner>.gre {
-    background: #DFE7EC;
     color: #304859;
     border-radius: 10px;
 }
