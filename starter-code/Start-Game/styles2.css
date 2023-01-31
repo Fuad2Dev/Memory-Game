@@ -187,22 +187,3 @@ body {
     width: 100px;
     height: 100px;
 }
-
-
-/* css for winner */
-
-.inner {
-    border: 1px solid;
-}
-
-.winner {
-    height: 50px;
-    width: 500px;
-    border-radius: 10px;
-    background-color: red;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 20px;
-    margin-bottom: 15px;
-}
