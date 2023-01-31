@@ -6,20 +6,70 @@
 .inner {
     border: 1px solid;
     width: 100%;
-    border-radius: 15px;
-    background-color: white;
+    background: #F2F2F2;
+    border-radius: 20px;
+}
+
+.hed {
+    top: calc(50% - 60px/2 - 270px);
+    font-family: 'Atkinson Hyperlegible';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+    text-align: center;
+    color: #152938;
+}
+
+.p {
+    top: calc(50% - 22px/2 - 213px);
+    font-family: 'Atkinson Hyperlegible';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #7191A5;
+}
+
+h3 {
+    color: #FCFCFC;
+    font-family: 'Atkinson Hyperlegible';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.bu {
+    background: #152938;
+    border-radius: 10px;
+}
+
+h1 {
+    font-family: 'Atkinson Hyperlegible';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    text-align: right;
+    color: #FCFCFC;
 }
 
 .winner {
     height: 50px;
     width: 60%;
     border-radius: 10px;
-    background-color: red;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 20px;
     margin: 0 auto 15px;
+}
+
+.winner>.gre {
+    background: #DFE7EC;
+    border-radius: 10px
 }
 
 .pop {
@@ -31,12 +81,21 @@
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    padding-bottom: 50px;
 }
 
 .down {
-    height: 30px;
+    height: 40px;
     width: 240px;
     border-radius: 25px;
     font-style: Atkinson Hyperlegible;
     font-Weight: 700;
+}
+
+.org {
+    background-color: #FDA214;
+}
+
+.gre {
+    background-color: #DFE7EC;
 }
