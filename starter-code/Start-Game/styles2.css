@@ -222,9 +222,8 @@ h1 {
     body {
         padding: 30px 40px;
     }
-    img {
-        /* width: 90px;
-        margin-left: -140px; */
+    .four {
+        padding: 60px 0;
     }
     .nav-r,
     .nav-n {
@@ -238,6 +237,10 @@ h1 {
     .dark {
         width: 44px;
         height: 44px;
+    }
+    .bg {
+        height: 80px;
+        width: 80px;
     }
     .menu {
         display: block;
