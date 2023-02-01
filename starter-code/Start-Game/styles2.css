@@ -146,6 +146,7 @@ body {
     border-radius: 10px;
     font-size: 12px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     background-color: #BCCED9;
@@ -255,5 +256,9 @@ h1 {
     }
     .ct {
         display: none;
+    }
+    .wrap-top {
+        width: 100%;
+        text-align: center;
     }
 }
