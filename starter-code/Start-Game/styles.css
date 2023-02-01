@@ -114,3 +114,37 @@ h3 {
     line-height: 25px;
     color: #7191A5;
 }
+
+
+/* media Querey for Mobile */
+
+@media screen and (max-width: 780px) {
+    .logo {
+        width: 40%;
+        margin-left: 90px;
+        padding: 50px 0;
+    }
+    .container {
+        width: 85%;
+        height: 600px;
+    }
+    .row {
+        margin: 10px 0;
+    }
+    .white {
+        padding: 10px 0;
+    }
+    .l1,
+    .l3 {
+        width: 120px;
+        height: 35px;
+    }
+    .l2 {
+        width: 70px;
+        height: 35px;
+        border-radius: 40px;
+    }
+    button {
+        margin: 30px 0;
+    }
+}
