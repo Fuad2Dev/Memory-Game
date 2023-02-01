@@ -70,7 +70,7 @@ body {
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding: 2rem 0;
+    padding: 5rem 0;
 }
 
 .orange {
@@ -127,7 +127,7 @@ body {
 .ft {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
 }
 
 .ft-center {
@@ -159,8 +159,12 @@ body {
     position: absolute;
     width: 20px;
     height: 20px;
-    top: -19px;
-    left: 84px;
+    /* top: -19px;
+    left: 84px; */
+    top: 0;
+    transform: translate(-50%, -100%);
+    left: 50%;
+    /* background: black; */
     background: #FDA214;
     clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
 }
@@ -186,4 +190,60 @@ body {
 .bg {
     width: 100px;
     height: 100px;
+}
+
+.menu {
+    display: none;
+}
+
+.p-small {
+    display: none;
+}
+
+.p-large {
+    display: block;
+}
+
+.box {
+    flex-wrap: wrap;
+}
+
+
+/* media Querey for Mobile */
+
+@media screen and (max-width: 480px) and (min-width: 320px) {
+    body {
+        padding: 30px 40px;
+    }
+    img {
+        /* width: 90px;
+        margin-left: -140px; */
+    }
+    .nav-r,
+    .nav-n {
+        width: 100px;
+        height: 30px;
+        font-size: 15px;
+        display: none;
+    }
+    .orange,
+    .grey,
+    .dark {
+        width: 44px;
+        height: 44px;
+    }
+    .menu {
+        display: block;
+    }
+    .p-small {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .p-large {
+        display: none;
+    }
+    .ct {
+        display: none;
+    }
 }
