@@ -82,6 +82,8 @@ body {
     border: none;
     font-size: 24px;
     font-weight: 700;
+    font-family: 'Atkinson Hyperlegible';
+    font-style: normal;
 }
 
 .grey {
@@ -93,6 +95,7 @@ body {
     border: none;
     font-size: 24px;
     font-weight: 700;
+    font-family: 'Atkinson Hyperlegible';
 }
 
 .flex>.hover:hover {
@@ -185,6 +188,10 @@ body {
     font-size: 13px;
     text-align: center;
     padding-top: 15px;
+}
+
+h1 {
+    font-family: 'Atkinson Hyperlegible';
 }
 
 .bg {
