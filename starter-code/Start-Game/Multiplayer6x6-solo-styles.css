@@ -272,10 +272,11 @@ h1 {
     }
     .nav-div {
         margin: 0 50px;
+        width: 210px;
     }
     .nav-r,
     .nav-n {
-        width: 150px;
+        width: 190px;
         height: 50px;
         font-size: 15px;
         display: block;
@@ -283,42 +284,15 @@ h1 {
     .orange,
     .grey,
     .dark {
-        width: 84px;
-        height: 84px;
-    }
-    .bg {
-        height: 80px;
-        width: 80px;
+        width: 64px;
+        height: 64px;
     }
     .menu {
         display: none;
     }
-    .p-small {
-        display: none;
+    .f {
         width: 100%;
-        text-align: center;
-    }
-    .p-large {
-        display: block;
-        text-align: left;
-    }
-    .ct {
-        display: none;
-    }
-    .wrap-top {
-        width: 100%;
-        text-align: center;
-    }
-    .top {
-        margin-top: 5px;
-        width: 40px;
-    }
-    .box {
         display: flex;
-        flex-direction: column;
-        text-align: start;
-    }
-    a {
-        text-decoration: none;
+        flex-direction: row;
     }
 }
