@@ -233,7 +233,7 @@ h1 {
 
 @media screen and (max-width: 480px) and (min-width: 320px) {
     body {
-        padding: 30px 40px;
+        padding: 50px 40px;
     }
     .four {
         padding: 60px 0;
