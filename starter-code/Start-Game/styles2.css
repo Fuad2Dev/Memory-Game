@@ -262,3 +262,63 @@ h1 {
         text-align: center;
     }
 }
+
+
+/* Media Query for tablet */
+
+@media screen and (max-width: 768px) and (min-width: 481px) {
+    body {
+        padding: 30px 40px;
+    }
+    .nav-div {
+        margin: 0 50px;
+    }
+    .nav-r,
+    .nav-n {
+        width: 150px;
+        height: 50px;
+        font-size: 15px;
+        display: block;
+    }
+    .orange,
+    .grey,
+    .dark {
+        width: 84px;
+        height: 84px;
+    }
+    .bg {
+        height: 80px;
+        width: 80px;
+    }
+    .menu {
+        display: none;
+    }
+    .p-small {
+        display: none;
+        width: 100%;
+        text-align: center;
+    }
+    .p-large {
+        display: block;
+        text-align: left;
+    }
+    .ct {
+        display: none;
+    }
+    .wrap-top {
+        width: 100%;
+        text-align: center;
+    }
+    .top {
+        margin-top: 5px;
+        width: 40px;
+    }
+    .box {
+        display: flex;
+        flex-direction: column;
+        text-align: start;
+    }
+    a {
+        text-decoration: none;
+    }
+}
