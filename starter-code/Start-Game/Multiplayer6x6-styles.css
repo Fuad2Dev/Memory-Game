@@ -159,16 +159,11 @@ body {
     margin-top: 26px;
 }
 
-.ct {
-    margin-top: -30px;
-    margin-bottom: 20px;
-}
-
 .top {
     position: absolute;
     width: 50px;
     height: 20px;
-    top: 0;
+    top: 2px;
     transform: translate(-50%, -100%);
     left: 50%;
     background: #FDA214;
@@ -191,6 +186,21 @@ body {
     font-size: 13px;
     text-align: center;
     padding-top: 15px;
+}
+
+.ct {
+    position: absolute;
+    width: 190px;
+    height: 20px;
+    margin-top: 15px;
+    margin-left: 15px;
+    font-family: 'Atkinson Hyperlegible';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 5px;
 }
 
 h1 {
@@ -247,11 +257,28 @@ h1 {
     }
     .menu {
         display: block;
+        width: 180px;
+        height: 50px;
+    }
+    .top {
+        position: absolute;
+        width: 30px;
+        height: 20px;
+        top: 8px;
+        transform: translate(-50%, -100%);
+        left: 50%;
+        background: #FDA214;
+        clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
     }
     .p-small {
         display: block;
         width: 100%;
         text-align: center;
+        font-family: 'Atkinson Hyperlegible';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 19px;
     }
     .p-large {
         display: none;
