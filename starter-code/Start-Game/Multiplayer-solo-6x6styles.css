@@ -163,12 +163,9 @@ body {
     position: absolute;
     width: 20px;
     height: 20px;
-    /* top: -19px;
-    left: 84px; */
     top: 0;
     transform: translate(-50%, -100%);
     left: 50%;
-    /* background: black; */
     background: #FDA214;
     clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
 }
