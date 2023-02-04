@@ -17,6 +17,7 @@
         background: #FCFCFC;
         overflow: hidden;
         display: flex;
+        align-items: center;
         flex-direction: column;
         padding: 5rem 10rem;
         overflow-y: scroll;
@@ -30,10 +31,18 @@
         padding: 2% 0;
     }
     
+    .nav>a>img {
+        width: 60%;
+    }
+    
     .nav-div {
-        width: 25%;
+        width: fit-content;
         display: flex;
         justify-content: space-between;
+    }
+    
+    .nav-div>a {
+        margin-left: 1rem;
     }
     
     .nav-r {
@@ -121,6 +130,10 @@
     .flex>button {
         margin-right: 1rem;
     }
+    
+    .flex>button:last-child {
+        margin-right: 0;
+    }
     /* footer {
     background-color: aqua;
 } */
@@ -147,7 +160,7 @@
         flex-wrap: wrap;
         justify-content: space-around;
         align-items: center;
-        background-color: #BCCED9;
+        background-color: #DFE7EC;
     }
     /*  */
     
@@ -163,11 +176,19 @@
     .restart {
         margin-right: 15px;
     }
+    
+    .wrap-top {
+        color: #7191A5;
+    }
+    
+    .f>h1 {
+        color: #304859;
+    }
     /* media Querey for Mobile */
     
-    @media screen and (max-width: 480px) and (min-width: 320px) {
+    @media screen and (max-width: 480px) {
         body {
-            padding: 50px 40px;
+            padding: 50px 15px;
         }
         .nav-r,
         .nav-n {
@@ -188,8 +209,8 @@
         }
         .menu {
             display: block;
-            width: 180px;
-            height: 50px;
+            width: 5rem;
+            height: 40px;
         }
         .ct {
             display: none;
@@ -198,12 +219,21 @@
             width: 100%;
             text-align: center;
         }
+        .cal {
+            width: fit-content;
+        }
+        .ft-center {
+            width: 100%;
+        }
     }
     /* Media Query for tablet */
     
     @media screen and (max-width: 768px) and (min-width: 481px) {
+        body {
+            padding: 2rem;
+        }
         .nav-div {
-            margin: 0 50px;
+            width: fit-content;
         }
         .nav-r,
         .nav-n {
