@@ -42,18 +42,22 @@ body {
     margin: 20px 0;
 }
 
+
+/* 
 button {
     background-color: #BCCED9;
     border: none;
     padding: 10px 0;
     color: #FCFCFC;
     border-radius: 50px;
-}
+} */
 
 .memory {
     color: white;
 }
 
+
+/* 
 .l1,
 .l3 {
     width: 200px;
@@ -83,7 +87,7 @@ button {
     display: flex;
     justify-content: space-between;
     height: 50px;
-}
+} */
 
 .active {
     background-color: #304859;
