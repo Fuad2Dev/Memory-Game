@@ -1,6 +1,6 @@
 ## The challenge
 
-Your challenge is to build out this Memory game and get it looking as close to the design as possible.
+Your challenge is to build out this Memory game and get it looking as close to the [design](<https://www.figma.com/file/QOcjIRvuBiq68SGopDZ8O6/memory-game-(Copy)?node-id=0%3A1&t=kkORZLMZqDxup8bc-0>) as possible.
 
 Your users should be able to:
 
@@ -10,7 +10,6 @@ Your users should be able to:
 - Set the theme to use numbers or icons within the tiles
 - Choose to play on either a 6x6 or 4x4 grid
 
-
 ### Expected behaviour
 
 - You can choose to make the default screen either the Start Game screen or the solo player 4x4 grid. Note that we're using the solo player 4x4 grid for the design screenshot, so if you choose the Start Game screen, it won't match up in the design comparison slider. This isn't a big deal, but is something worth considering.
@@ -19,4 +18,3 @@ Your users should be able to:
 - Clicking "Restart" will restart the game with the current settings
 - Clicking "New Game" will go to the Start Game screen where the player can choose their settings
 - The icons in the design are from [Font Awesome](https://fontawesome.com/). Please choose whatever icons you prefer. You could even use a different icon library, if you like.
-
