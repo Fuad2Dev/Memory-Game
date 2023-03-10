@@ -11,44 +11,43 @@
     border: none;
 }
 
-.menu{
+.menu {
     background: #BCCED9;
     color: White;
 }
 
-.menu:hover{
+.menu:hover {
     background: #6395B8;
     color: White;
 }
 
-.active{
+.active {
     background: #304859;
 }
 
-.btn-small{
+.btn-small {
     width: 20%;
     height: 40px;
 }
 
-.btn-medium{
+.btn-medium {
     width: 47%;
     height: 40px;
 }
 
-.btn-large{
+.btn-large {
     width: 100%;
     height: 48px;
 }
 
-.btn-primary{
+.btn-primary {
     padding: 8px 15px;
     background-color: #FDA214;
     color: #FCFCFC;
 }
-.btn-secondary{
+
+.btn-secondary {
     padding: 8px 15px;
     background-color: #DFE7EC;
     color: #304859;
-
 }
-
