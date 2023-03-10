@@ -6,8 +6,9 @@
 @import "ball.css";
 
 /* colors */
+
 .bg-dark-blue {
-    background: #152938;   
+    background: #152938;
 }
 
 * {
@@ -20,8 +21,10 @@ a {
     all: unset;
 }
 
+
 /* class="flex justify-between p-2" */
-nav{
+
+nav {
     display: flex;
     justify-content: space-between;
     /* padding: 40px 30px 0px; */
@@ -30,30 +33,23 @@ nav{
     padding-top: 40px;
 }
 
+
 /* show/hide */
+
 .hide-small {
     display: none;
 }
-@media (min-width: 540px){
+
+@media (min-width: 540px) {
     a.hide-small {
         display: inline;
     }
-
-    .hide-small{
+    .hide-small {
         display: block;
     }
-   
     .hide-large {
         display: none;
-    } 
+    }
 }
 
-@media (min-width: 830px){
-
-}
-
-
-
-
-
-
+@media (min-width: 830px) {}
