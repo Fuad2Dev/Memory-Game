@@ -1,4 +1,4 @@
-.ball {
+.ball{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -12,7 +12,7 @@
     border-radius: 50%;
 }
 
-.ball-big>span {
+.ball-big > span {
     font-size: 56px;
 }
 
@@ -22,11 +22,12 @@
     border-radius: 50%;
 }
 
-@media (min-width: 540px) {
+@media (min-width: 540px){
     .ball-big {
         width: 118px;
         height: 118px;
     }
+
     .ball-small {
         width: 82px;
         height: 82px;
@@ -44,4 +45,8 @@
 
 .ball-active {
     background: #FDA214;
+}
+
+.matched{
+    background: #BCCED9 !important
 }

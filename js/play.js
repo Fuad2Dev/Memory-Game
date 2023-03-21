@@ -1,41 +1,28 @@
 let $previous = null;
 
 function move(e) {
-    let $current = this.childNodes[0];
+  let $current = this.childNodes[0];
 
-    $current.style.display = "block";
+  $current.style.display = "block";
 
-    checkPair($current);
+  checkPair($current);
 }
 
 function checkPair($current) {
-    // if has pair
-    let isFirstPlay = ($previous == null)
-
-    if (isFirstPlay) {
-        $previous = $current;
+  // if has pair
+  if ($previous != null) {
+    switchTurn();
+    if ($previous.innerText != $current.innerText) {
+      delay($previous, $current);
     } else {
-        let isEqual = $previous.innerText == $current.innerText
-
-        switchTurn(isEqual);
-
-        if (isEqual) {
-            $previous.parentNode.removeEventListener("click", move);
-            $current.parentNode.removeEventListener("click", move);
-            let $prev = $previous.parentNode.style
-            $previous.parentNode.style.backgroundColor = "#FDA214"
-            $current.parentNode.style.backgroundColor = "#FDA214"
-            setTimeout(() => {
-                    $prev.backgroundColor = "#BCCED9"
-                    $current.parentNode.style.backgroundColor = "#BCCED9"
-                },
-                1000)
-        } else {
-            delay($previous, $current);
-        }
-
-        $previous = null;
+      $previous.parentNode.removeEventListener("click", move);
+      $current.parentNode.removeEventListener("click", move);
     }
+
+    $previous = null;
+  } else {
+    $previous = $current;
+  }
 }
 
 addEventListener("ball", "click", move);
