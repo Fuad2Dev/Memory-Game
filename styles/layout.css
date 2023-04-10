@@ -1,17 +1,18 @@
 /* flex - layout */
+
 .flex {
     display: flex;
 }
 
-.flex-column{
+.flex-column {
     flex-direction: column;
 }
 
-.justify-center{
+.justify-center {
     justify-content: center;
 }
 
-.justify-between{
+.justify-between {
     justify-content: space-between;
 }
 
@@ -22,11 +23,11 @@
 
 /* spacing */
 
-.space-x > * + *{
+.space-x>*+* {
     margin-left: 10px;
 }
 
-.space-y > * + *{
+.space-y>*+* {
     margin-top: 25px;
 }
 
@@ -38,18 +39,22 @@
     margin: 10px 0;
 }
 
-.p-1{
+.p-1 {
     padding: 10px;
 }
 
-.p-2{
+.p-2 {
     padding: 20px;
 }
 
-.py{
+.py {
     padding: 40px 0 90px;
 }
 
 .w-full {
     width: 100%;
+}
+
+.card {
+    padding: 1rem;
 }
