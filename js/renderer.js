@@ -1,13 +1,12 @@
 let size = Number(localStorage.getItem("size"));
 let players = Number(localStorage.getItem("players"));
 
+// board generation
 // create the parent <div> element
 const container = document.createElement("div");
-container.id = "playground";
 container.classList.add("space-y", "flex", "flex-column", "py");
 container.style.maxWidth = "532px";
 
-// board generation
 // create four/six child <div> elements with the class "flex space-x justify-between"
 for (let i = 0; i < size; i++) {
     const row = document.createElement("div");
@@ -37,6 +36,8 @@ for (let i = 0; i < size; i++) {
 // scoreboard generation
 // append the parent <div> to the document body
 document.querySelector("#playground").appendChild(container);
+
+//Generating the score board 
 if (players > 1) {
     for (let i = 0; i < players; i++) {
         card = document.createElement("div");
