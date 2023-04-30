@@ -6,7 +6,7 @@ function addEventListener(className, event, fn) {
 }
 
 function generateRandomNumber() {
-    return Maths.floor(Math.random() * 100);
+    return Math.floor(Math.random() * 100);
 }
 
 function generateNumbers(size) {
@@ -21,7 +21,7 @@ function generateNumbers(size) {
         i++;
 
     }
-    return [...random, ...randomArray];
+    return [...randomArray, ...randomArray];
 }
 
 function removeRandomElement(array) {
