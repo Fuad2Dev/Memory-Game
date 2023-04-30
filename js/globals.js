@@ -5,8 +5,8 @@ function addEventListener(className, event, fn) {
         list[i].addEventListener(event, fn, false);
 }
 
-function generateNumbers() {
-    returnMaths.floor(Math.random() * 100);
+function generateRandomNumber() {
+    return Maths.floor(Math.random() * 100);
 }
 
 function generateNumbers(size) {
