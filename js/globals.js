@@ -5,12 +5,23 @@ function addEventListener(className, event, fn) {
         list[i].addEventListener(event, fn, false);
 }
 
+function generateNumbers() {
+    returnMaths.floor(Math.random() * 100);
+}
+
 function generateNumbers(size) {
     const randomArray = [];
-    for (let i = 0; i < (size * size) / 2; i++) {
-        randomArray.push(Math.floor(Math.random() * 100));
+    for (let i = 0; i < (size * size) / 2;) {
+        let randomNumber = generateRandomNumber();
+        if (randomArray.indexOf(randomNumber) === -1) {
+            randomArray.push(randomNumber);
+        } else {
+            continue;
+        }
+        i++;
+
     }
-    return [...randomArray, ...randomArray];
+    return [...random, ...randomArray];
 }
 
 function removeRandomElement(array) {
