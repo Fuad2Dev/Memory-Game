@@ -13,45 +13,46 @@ function move(e) {
 
 function checkPair($current) {
     // if has pair
-    let isFirstPlay = $previous == null;
+    let isFirstPlay = ($previous == null);
 
     if (isFirstPlay) {
         $previous = $current;
     } else {
-        let isEqual = $previous.innerText == $current.innerText;
+        let isEqual = ($previous.innerText == $current.innerText);
 
         if (players > 1) switchTurn(isEqual);
         else updateMoves();
 
         if (isEqual) {
+            //remove click when isEqual
             $previous.parentNode.removeEventListener("click", move);
             $current.parentNode.removeEventListener("click", move);
 
+            //remove background style
             $previous.parentNode.style.background = "";
             $current.parentNode.style.background = "";
-
+            //add the matched class
             $previous.parentNode.classList.add("matched");
             $current.parentNode.classList.add("matched");
-
+            //check if all the balls have been matched
             $size = Number(localStorage.getItem("size"));
             if (document.querySelectorAll(".matched").length == size * size) {
-                $scores_dom = document.querySelectorAll(".multi-card h3");
-
+                //get all the scores in empty array
                 $scores = [];
 
                 document.querySelectorAll(".multi-card h3").forEach((element) => {
                     $scores.push(Number(element.innerText));
                 });
 
-                // console.log($scores);
+                // get the max score
 
                 $max = Math.max(...$scores);
-
+                //create a result card for each player
                 for (
                     let index = 0; index < Number(localStorage.getItem("players")); index++
                 ) {
-                    const div = document.createElement("div");
-                    div.setAttribute("class", "flex tile justify-between");
+                    const card = document.createElement("div");
+                    card.setAttribute("class", "flex tile justify-between");
 
                     const playerDiv = document.createElement("div");
                     playerDiv.textContent = `Player ${index + 1}`;
@@ -59,19 +60,15 @@ function checkPair($current) {
                     const pairsDiv = document.createElement("div");
                     pairsDiv.textContent = `${$scores[index]} Pairs`;
 
-                    div.appendChild(playerDiv);
-                    div.appendChild(pairsDiv);
+                    card.appendChild(playerDiv);
+                    card.appendChild(pairsDiv);
 
-                    document.querySelector('#result_cards').appendChild(div);
+                    document.querySelector('#result_cards').appendChild(card);
                 }
-
+                // show modal
                 document.querySelector(".modal").style.display = "block";
 
-                document.querySelectorAll(".multi-card h3").forEach((element) => {
-                    if (element.innerText == $max)
-                        element.parentNode.classList.add("winner");
-                });
-
+                //indicate a tie / winner
                 if (hasDuplicateOf($max, $scores))
                     document.querySelector("#who_won").innerText = `It's a tie!`;
                 else {
@@ -80,6 +77,7 @@ function checkPair($current) {
                     ).innerText = `Player ${$scores.indexOf($max) + 1} wins!`;
                 }
 
+                //indicate winner / winners
                 document.querySelectorAll(".tile").forEach((element, index) => {
                     if ($scores[index] == $max)
                         element.classList.add('winner')

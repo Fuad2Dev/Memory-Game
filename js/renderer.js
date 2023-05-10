@@ -2,10 +2,10 @@ let size = Number(localStorage.getItem("size"));
 let players = Number(localStorage.getItem("players"));
 
 // board generation
-// create the parent <div> element
-const container = document.createElement("div");
-container.classList.add("space-y", "flex", "flex-column", "py");
-container.style.maxWidth = "532px";
+// create the board <div> element
+const board = document.createElement("div");
+board.classList.add("space-y", "flex", "flex-column", "py");
+board.style.maxWidth = "532px";
 
 // create four/six child <div> elements with the class "flex space-x justify-between"
 for (let i = 0; i < size; i++) {
@@ -25,17 +25,17 @@ for (let i = 0; i < size; i++) {
         const span = document.createElement("span");
         ball.appendChild(span);
 
-        // append the ball <div> to the child <div>
+        // append the ball <div> to the row <div>
         row.appendChild(ball);
     }
 
-    // append the child <div> to the parent <div>
-    container.appendChild(row);
+    // append the row <div> to the parent <div>
+    board.appendChild(row);
 }
 
 // scoreboard generation
-// append the parent <div> to the document body
-document.querySelector("#playground").appendChild(container);
+// append the board <div> to the document body
+document.querySelector("#playground").appendChild(board);
 
 //Generating the score board 
 if (players > 1) {
@@ -78,11 +78,6 @@ if (players > 1) {
     // Select the timer element from the DOM
     const timerElement = document.getElementById("timer");
 
-    // Initialize the elapsed time to zero
-    let elapsedTime = 0;
-
-    // Initialize the interval ID to null
-    let intervalId = null;
 
     startTimer(timerElement)
 }
