@@ -35,7 +35,8 @@ for (let i = 0; i < size; i++) {
 
 // scoreboard generation
 // append the board <div> to the document body
-document.querySelector("#playground").appendChild(board);
+const playgroundDomInnerHtml = document.querySelector("#playground").innerHTML
+document.querySelector("#playground").innerHTML = board.innerHTML + playgroundDomInnerHtml
 
 //Generating the score board 
 if (players > 1) {
@@ -52,6 +53,7 @@ if (players > 1) {
         p_small.innerText = "Player " + (i + 1);
 
         h3 = document.createElement("h3");
+
         h3.innerText = 0;
 
         card.appendChild(p_large);
