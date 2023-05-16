@@ -37,6 +37,7 @@ function setSize(e) {
 }
 
 function startGame() {
+    localStorage.setItem("theme", theme)
     localStorage.setItem("players", players);
     localStorage.setItem("turn", 0);
     localStorage.setItem("size", size[0]);

@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@700&display=swap');
-
 * {
     font-family: 'Atkinson Hyperlegible', sans-serif;
     font-size: 18px;
@@ -13,14 +12,18 @@ number-4x4 {
     font-size: 56px;
 }
 
-h1{
+h1 {
     font-size: 48px;
 }
 
-h2{
+h2 {
     font-size: 32px;
 }
 
-h3{
+h3 {
     font-size: 20px;
+}
+
+.won {
+    color: #152938;
 }

@@ -1,5 +1,6 @@
 let size = Number(localStorage.getItem("size"));
 let players = Number(localStorage.getItem("players"));
+let theme = localStorage.getItem("theme")
 
 // board generation
 // create the board <div> element
@@ -35,13 +36,16 @@ for (let i = 0; i < size; i++) {
 
 // scoreboard generation
 // append the board <div> to the document body
-document.querySelector("#playground").appendChild(board);
+const playgroundDomInnerHtml = document.querySelector("#playground").innerHTML
+document.querySelector("#playground").innerHTML = board.innerHTML + playgroundDomInnerHtml
 
 //Generating the score board 
 if (players > 1) {
     for (let i = 0; i < players; i++) {
         card = document.createElement("div");
+        arrow = document.createElement("div")
         card.classList.add("multi-card");
+        arrow.classList.add("arrow")
 
         p_large = document.createElement("p");
         p_large.classList.add("hide-large");
@@ -52,8 +56,9 @@ if (players > 1) {
         p_small.innerText = "Player " + (i + 1);
 
         h3 = document.createElement("h3");
-        h3.innerText = 0;
 
+        h3.innerText = 0;
+        card.appendChild(arrow)
         card.appendChild(p_large);
         card.appendChild(p_small);
         card.appendChild(h3);
@@ -85,13 +90,31 @@ if (players > 1) {
 // generate numbers on board
 $arr = generateNumbers(size);
 
-// scatter generated numbers on board
-$balls = document.querySelectorAll(".ball");
-$balls.forEach((element) => {
-    element.childNodes[0].innerText = removeRandomElement($arr);
-});
+if (theme === "icons") {
+    $arr = ['fa fa-moon', 'fa fa-car', 'fa fa-lira-sign', 'fa fa-snowflake']
+        // scatter generated numbers on board
+    $balls = document.querySelectorAll(".ball");
+    $balls.forEach((element) => {
+        // element.childNodes[0].innerText = removeRandomElement($arr);
+        let icon = document.createElement("i")
+        icon.classList.add("fa-moon")
+        element.childNodes[0].appendChild(icon)
+        console.log(element)
+    });
 
-// hide board values
-$balls.forEach((element) => {
-    element.childNodes[0].style.display = "none";
-});
+    // hide board values
+    $balls.forEach((element) => {
+        element.childNodes[0].style.display = "none";
+    });
+} else {
+    // scatter generated numbers on board
+    $balls = document.querySelectorAll(".ball");
+    $balls.forEach((element) => {
+        element.childNodes[0].innerText = removeRandomElement($arr);
+    });
+
+    // hide board values
+    $balls.forEach((element) => {
+        element.childNodes[0].style.display = "none";
+    });
+}
