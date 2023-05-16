@@ -61,7 +61,7 @@ function switchTurn(isEqual) {
     document
         .querySelectorAll(".multi-card")[localStorage.getItem("turn")].classList.add("turn");
 }
-
+intervalId = null
 function startTimer(timerElement) {
     // Save the current timestamp
     const startTime = Date.now();
