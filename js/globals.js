@@ -60,8 +60,14 @@ function switchTurn(isEqual) {
     // console.log(localStorage.getItem("turn"));
     document
         .querySelectorAll(".multi-card")[localStorage.getItem("turn")].classList.add("turn");
+    document.querySelectorAll(".arrow").forEach((elem) => {
+        elem.style.display = "none"
+    })
+    document
+        .querySelectorAll(".arrow")[localStorage.getItem("turn")].style.display = "block";
 }
 intervalId = null
+
 function startTimer(timerElement) {
     // Save the current timestamp
     const startTime = Date.now();

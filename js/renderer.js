@@ -46,6 +46,7 @@ if (players > 1) {
         arrow = document.createElement("div")
         card.classList.add("multi-card");
         arrow.classList.add("arrow")
+        if (i == 0) arrow.style.display = "block"
 
         p_large = document.createElement("p");
         p_large.classList.add("hide-large");
