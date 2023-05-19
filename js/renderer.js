@@ -39,7 +39,7 @@ for (let i = 0; i < size; i++) {
 const playgroundDomInnerHtml = document.querySelector("#playground").innerHTML
 document.querySelector("#playground").innerHTML = board.innerHTML + playgroundDomInnerHtml
 
-//Generating the score board 
+//Generating the score board / arrow element on top of cards
 if (players > 1) {
     for (let i = 0; i < players; i++) {
         card = document.createElement("div");

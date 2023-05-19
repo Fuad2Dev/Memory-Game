@@ -57,7 +57,7 @@ function switchTurn(isEqual) {
         localStorage.setItem("turn", Number(localStorage.getItem("turn")) + 1);
     }
 
-    // console.log(localStorage.getItem("turn"));
+    // console.log(localStorage.getItem("turn") and arrow);
     document
         .querySelectorAll(".multi-card")[localStorage.getItem("turn")].classList.add("turn");
     document.querySelectorAll(".arrow").forEach((elem) => {
