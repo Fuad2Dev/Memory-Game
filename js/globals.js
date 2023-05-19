@@ -1,3 +1,24 @@
+// An array if icons 
+const ICONS = ["&#10054;", "&#9763;", "&#9760;", "&#9766;",
+    "&#9770;", "&#9775;", "&#9798;", "&#9785;",
+    "&#9812;", "&#9815;", "&#9816;", "&#9832;",
+    "&#9840;", "&#9874;", "&#9878;", "&#9879;",
+    "&#9880;", "&#9881;", "&#9882;", "&#9883;",
+    "&#10028;", "&#10021;", "&#10039;", "&#10086;"
+
+]
+
+
+function shuffleArray(array) {
+
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
+}
+
+
 function addEventListener(className, event, fn) {
     var list = document.querySelectorAll(`.${className}`);
 
@@ -21,7 +42,18 @@ function generateNumbers(size) {
         i++;
 
     }
-    return [...randomArray, ...randomArray];
+
+    let icons = shuffleArray(ICONS).slice(0, (size * size) / 2)
+    icons = [...icons, ...icons]
+
+    let randomMatrix = [...randomArray, ...randomArray].map(function(item, index) {
+        console.log(item, icons[index]);
+        return [item, icons[index]]
+    })
+
+
+
+    return randomMatrix;
 }
 
 function removeRandomElement(array) {

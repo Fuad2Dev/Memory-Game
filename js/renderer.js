@@ -92,17 +92,19 @@ if (players > 1) {
 $arr = generateNumbers(size);
 
 if (theme === "icons") {
-    $arr = ['fa fa-moon', 'fa fa-car', 'fa fa-lira-sign', 'fa fa-snowflake']
-        // scatter generated numbers on board
+
+
     $balls = document.querySelectorAll(".ball");
     $balls.forEach((element) => {
-        // element.childNodes[0].innerText = removeRandomElement($arr);
-        let icon = document.createElement("i")
-        icon.classList.add("fa-moon")
-        element.childNodes[0].appendChild(icon)
-        console.log(element)
-    });
 
+        const randomNumber = removeRandomElement($arr);
+        // adding icon to hmtl element 
+        element.childNodes[0].innerHTML = `<p class="rounds" >
+        ${randomNumber[1]}
+        </p>`
+            // adding number dataset to html 
+        element.childNodes[0].dataset.number = randomNumber[0]
+    });
     // hide board values
     $balls.forEach((element) => {
         element.childNodes[0].style.display = "none";
@@ -111,7 +113,9 @@ if (theme === "icons") {
     // scatter generated numbers on board
     $balls = document.querySelectorAll(".ball");
     $balls.forEach((element) => {
-        element.childNodes[0].innerText = removeRandomElement($arr);
+        const randomNumber = removeRandomElement($arr);
+        element.childNodes[0].innerText = randomNumber[0]
+        element.childNodes[0].dataset.number = randomNumber[0]
     });
 
     // hide board values
