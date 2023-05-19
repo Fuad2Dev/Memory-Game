@@ -84,7 +84,6 @@ if (players > 1) {
     // Select the timer element from the DOM
     const timerElement = document.getElementById("timer");
 
-
     startTimer(timerElement)
 }
 
