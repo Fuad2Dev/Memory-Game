@@ -82,19 +82,8 @@
 }
 
 @media (min-width: 830px) {
-    .multi-card {
-        /* padding: 5px 15px; */
-        /* text-wr */
-        /* width: 30%; */
-        /* flex-direction: row;
-        height: auto;
-        align-items: center;
-        justify-content: space-between; */
-    }
     .multi-card h3 {
         font-size: 22px;
-        /* display: block; */
-        /* margin-left: 8px; */
     }
 }
 
