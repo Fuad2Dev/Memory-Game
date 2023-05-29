@@ -73,11 +73,7 @@
 
 @media (min-width: 540px) {
     .multi-card {
-        /* padding: 5px 20px; */
-        /* text-wr */
-        /* width: 25%; */
         align-items: flex-start;
-        /* padding-left: 10px; */
     }
 }
 

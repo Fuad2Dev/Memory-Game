@@ -42,7 +42,7 @@ function generateNumbers(size) {
         i++;
 
     }
-
+    //reshuffle icons array
     let icons = shuffleArray(ICONS).slice(0, (size * size) / 2)
     icons = [...icons, ...icons]
 
